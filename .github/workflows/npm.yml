@@ -12,4 +12,4 @@ jobs:
       - name: Install client publish with npm
         run: npm install @emartech/client-publish
       - name: Run client publish
-        run: node node_modules/.bin/client-publish
+        run: node node_modules/.bin/client-publish -h deploy
