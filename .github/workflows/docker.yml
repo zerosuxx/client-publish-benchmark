@@ -9,3 +9,5 @@ jobs:
     steps:
       - name: Deploy to staging
         uses: docker://emarsys/client-publish:latest
+        with:
+          args: -h deploy
