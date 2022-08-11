@@ -1,0 +1,11 @@
+name: Usage with docker
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to staging
+        uses: docker://emarsys/client-publish:latest
